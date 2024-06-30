@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>HTML Form-1</h1><br>
+    <form action = "javascript:submitForm()" onSubmit = "return validate()">
+    <label for = "dob">Enter DOB: </label>
+    <input type = "date" name = "dob" id = "dob"  required><br><br>
+    <label for = "name">Enter Name: </label>
+    <input type = "text" name = "name" id = "name" placeholder="Abhipsa Pattnaik" required><br><br>
+    <label for = "color">Select Color: </label>
+    <input type = "color" name = "color" id = "color"><br><br>
+    <input type="submit" name="submit" value="Submit">
+    </form>
+    <script>
+       function validate(){
+                    let validated=true;
+                    let ele=document.getElementById("name");
+                    let ele2=document.getElementById("color");
+                    if(ele.value.length <= 10){
+                         validated=false;
+                         window.alert("Name must be greater than 10 characters");
+                    }
+                    if(ele.value !== "#000000"){
+                         validated=false;
+                         window.alert("Colour should be black");
+                    }
+                    return validated;
+               }
+               function submitForm(){
+                    window.alert("Form submitted");
+               }
+    </script>
+    <hr>
+    <h2>Navigation bars</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">First</a>
+      <a href="#">Second</a>
+      <a href="#">Third</a>
+    </nav>
+</body>
+</html>

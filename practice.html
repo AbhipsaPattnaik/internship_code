@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>HTML Practice</title>
+</head>
+<body>
+     <header style=" background-color :rgb(169, 169, 169) ; margin-bottom:50px ; font-size:50px; text-align: center; border:1px saddlebrowna black"><h2>MY FIRST HTML PAGE</h2></header>
+     <!-- paragraphs -->
+     <p style="background-color:rgba(12, 30, 225, 0.484);font-size:50px;margin-bottom:50px;"><span style="background-color:rgb(169, 10, 10); margin-bottom:50px;font-size:50px;"> Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Saepe totam quia tenetur dolore consequatur aspernatur, accusamus animi nesciunt voluptate minus molestias? Minus, unde pariatur iusto exercitationem architecto dolorem modi? Mollitia inventore amet dolor! <b>Alias</b>b cum sed omnis libero nemo odit, dicta, quaerat ipsa, reiciendis autem quisquam. Optio et quisquam quasi. Quisquam ad aperiam harum temporibus neque saepe placeat in. In minima explicabo odit maxime, porro neque ex molestias voluptatibus impedit ad similique culpa soluta saepe libero alias laborum ipsa? Numquam?</p>
+     <hr>
+     <div style="font-size:50px;">This is header types
+     <h1>Abhipsa Pattnaik</h1>
+     <h2>Abhipsa Pattnaik</h2>
+     <h3>Abhipsa Pattnaik</h3>
+     <h4>Abhipsa Pattnaik</h4>
+     <h5>Abhipsa Pattnaik</h5>
+     <h6>Abhipsa Pattnaik</h6>
+     </div>
+     <hr>
+     <section style="font-size:50px; background-color:yellow;">
+          <em><h3>Welcome to the website</h3></em><br>
+     </section>
+     <hr>
+     <div>
+          <h1 style="font-size:50px;">Adding Images:-</h1>
+          <img src="/images.jpeg" alt="logo" width="350px" height="350px">
+     </div>
+     <div>
+          <h1 style="font-size:50px;">Adding videos</h1>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/lpdRqn6xwiM?si=JNOHzFa19UtDkmmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     </div>
+     <hr>
+     <p style="font-size: 50px;text-align: center;">
+          <h1 style="font-size:50px;">Ordered lists:-</h1>
+          <ol type="1" >
+               <li style="font-size:50px;">Mango</li>
+               <li style="font-size:50px;">Banana</li>
+               <li style="font-size:50px;">Apple</li>
+               <li style="font-size:50px;">Grapes</li>
+          </ol><br>
+          <h2 style="font-size:50px;">Unordered lists:-</h2>
+          <ul>
+               <li style="font-size:50px;">Mango</li>
+               <li style="font-size:50px;">apple</li>
+               <li style="font-size:50px;">Banana</li>
+               <li style="font-size:50px;">Guava</li>
+          </ul>
+     </p>
+     <style>
+          th{
+               border : 1px solid black
+          }
+          td{
+               border : 1px solid black
+          }
+          form{
+               border : 1px solid black
+          }
+     </style>
+     <p style="font-size:100px;">
+     <table style="border:1px solid black">
+     <thead>
+          <tr>
+               <th>Name</th>
+               <th>Section</th>
+               <th>Grade</th>
+               <br>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>Abhipsa Pattnaik</td>
+               <td>A</td>
+               <td>O</td>
+               <br>
+          </tr>
+          <tr>
+               <td>Ashutosh Senapati</td>
+               <td>G</td>
+               <td>F</td>
+          </tr>
+          <tr>
+               <td colspan="3">Overall Pass</td>
+          </tr>
+     </tbody>
+     </table>
+     </p>
+     <hr>
+     <h1>Form 1:-</h1>
+     <div>
+          <form action = "javascript:submitForm()" onSubmit = "return validate()">
+               <label for="dob">Date of Birth:-</label>
+               <input type="date" name="dob" id="dob" required><br><br>
+               <label for="name">Name:-</label>
+               <input type="text" name="name" id="name" placeholder="Abhipsa Pattnaik" required><br><br>
+               <label for="color">Color:-</label>
+               <input type="color" name="color" id="color" required><br><br>
+               Gender:<br>
+               <label for="male">Male:-</label>
+               <input type="radio" name="male" id="male" ><br>
+               <label for="female">Female:-</label>
+               <input type="radio" name="female" id="female" ><br><br>
+               <input type="submit" name="submit" value="Submit">
+          </form>
+          <script>
+               function validate(){
+                    let validated=true;
+                    let ele=document.getElementById("name");
+                    let ele2=document.getElementById("color");
+                    if(ele.value.length <= 10){
+                         validated=false;
+                         window.alert("Name must be greater than 10 characters");
+                    }
+                    if(ele.value !== "#000000"){
+                         validated=false;
+                         window.alert("Colour should be black");
+                    }
+                    return validated;
+               }
+               function submitForm(){
+                    window.alert("Form submitted");
+               }
+          </script> 
+     </div>
+     <hr>
+     <h2>Navigation bars</h2>
+     <nav style="border:1px solid brown; background-color:blue; text-align:center;" width=100%>
+       <a href="#"><b style="color:rgb(4, 21, 21); font-size:50px; background-color:blue; border:1px solid black;">Home </b></a>
+       <a href="#"><b style="color:rgb(4, 21, 21); font-size:50px; background-color:blue; border:1px solid black;">First </b></a>
+       <a href="#"><b style="color:rgb(4, 21, 21); font-size:50px; background-color:blue; border:1px solid black;">Second</b> </a>
+       <a href="#"><b style="color:rgb(4, 21, 21); font-size:50px; background-color:blue; border:1px solid black;">Third</b> </a>
+     </nav>
+</body>
+</html> 

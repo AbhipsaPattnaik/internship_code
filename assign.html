@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="HTML Training" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assign</title>
+</head>
+<style>
+    footer{
+      text-align:center;
+      border:1px solid black;
+    }
+    body{
+      border:2px solid black;
+    }
+    .tha{
+        border:2px solid black;
+        text-align:left;
+        padding:0px;
+    }
+    table{
+      border-spacing:10px;
+      margin:10px;
+    }
+    .navigationBar{
+      background-color: #9ce39e;
+      overflow: hidden;
+      border:2px solid black;
+    }
+
+    .navigationBar a {
+      float: left;
+      color: #140a0a;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 40px;
+      font-style:bold;
+    }
+
+    .navigationBar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .navigationBar a.active {
+      background-color: #04aa6d;
+      color: white;
+    }
+    .first{
+        background-image:url("/—Pngtree—golden\ background\ free\ download\ jpg_1191625\ \(1\).jpg");
+        color:rgba(20, 3, 3, 0.9);
+        border:2px solid black;
+        font-weight:bold;
+        margin:10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+</style>
+<body> 
+    <nav class="navigationBar">
+      <a href="#" target="_self"><img src="/images.jpeg" alt="logo" width="100px" height="100px"></a>
+        <a href="#" target="_self" class="" onClick="activeSitename()" id="sitename"> SITENAME</a>
+        
+        <a href="/contact.html" target="_self" class="" onClick="activeContact()" id="contact">CONTACT US</a>
+    </nav>
+    <script type="text/javascript">
+      function activeSitename() {
+        document.getElementById("sitename").classList.add("active");
+        document.getElementById("contact").classList.remove("active");
+      }
+      function activeContact() {
+        document.getElementById("sitename").classList.remove("active");
+        document.getElementById("contact").classList.add("active");
+      }
+    </script>
+    <br>
+    <div class="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum enim, culpa ut porro quia eligendi accusantium delectus saepe vitae totam similique quo itaque? In facere pariatur vitae eos totam quaerat accusamus architecto culpa deleniti excepturi eius explicabo perferendis placeat beatae, sequi dicta sit nesciunt eaque aut facilis id dolorum. Distinctio assumenda itaque perspiciatis minima quae autem neque voluptates necessitatibus ratione magnam. Perspiciatis velit, enim fuga at officia veritatis eum sed quas a recusandae neque, reprehenderit, ullam rerum iure dolore sint?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quisquam reiciendis repudiandae placeat cupiditate labore recusandae nobis et eveniet ipsum, eaque rem accusamus similique, quibusdam error doloribus dolor, dolores totam veritatis est veniam? Earum, odit vitae nemo accusamus sit fuga maiores reiciendis eius pariatur fugit, ipsum, reprehenderit repellat sunt odio tempore commodi nesciunt? Atque amet laborum et, veniam tempore nisi dolorem aspernatur soluta voluptatum ab debitis, in esse consectetur! Corrupti eos et aperiam! At quas provident, eveniet porro eaque Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut excepturi et nesciunt perferendis delectus dignissimos, facilis fugit ullam? Et voluptatum iure, commodi porro modi, corrupti fugiat consectetur vitae nisi nam id odio possimus incidunt ipsa sunt libero officiis! Esse exercitationem harum nam alias, veniam voluptate porro in itaque excepturi vel, eligendi iure qui nulla maxime ducimus perspiciatis. Eligendi quas neque praesentium quos eveniet velit quibusdam fugit, inventore nemo excepturi. Eum mollitia dicta exercitationem reprehenderit dolorum, repellendus autem dolores perspiciatis repellat?
+    </div>
+    <table>
+        <thead>
+            <th class="tha"  style="background-color:wheat;" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, perferendis odit. Magnam libero sapiente error repellendus omnis eveniet accusamus qui quisquam. Neque cupiditate, inventore harum natus officia error repudiandae dolores ipsam labore deleniti animi? Labore cupiditate tenetur eaque nesciunt at! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde sunt quos aperiam obcaecati modi mollitia libero officia enim soluta velit itaque pariatur accusantium eveniet vitae voluptatem in consequuntur, temporibus eaque dolorem possimus. Incidunt, labore perferendis minima, cum, repellendus dicta deserunt in corporis excepturi numquam iusto qui? Ad similique fugit maxime dignissimos, laudantium beatae laborum. Placeat nemo similique exercitationem at? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id eveniet inventore consectetur minus adipisci earum mollitia beatae molestiae ab odit aliquid alias, veniam, incidunt nobis magnam quas soluta neque dolorem. Ipsum rerum excepturi sint, doloremque enim veniam eveniet eligendi nesciunt exercitationem nobis est amet, neque iusto optio aliquam saepe deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corrupti cumque officia. Architecto optio minima a numquam dolor cupiditate, nulla accusamus fugit nobis, temporibus iusto magni? Ipsam eum quidem dicta ex saepe eaque consequatur, et eligendi enim blanditiis ea magnam officiis totam facere voluptas autem praesentium consectetur obcaecati impedit ipsa accusamus molestiae natus? Ipsam dignissimos autem, nulla quaerat perspiciatis deserunt maiores voluptatibus, quidem, quibusdam explicabo
+            </th>
+            <th class="tha"><img src="/sixteen-miles-out-CBAwnGNjc3g-unsplash.jpg" alt="logo" width="400px" height="310px"></th>
+        </thead>
+      </table>
+        <table>
+          <thead>
+            <th class="tha"><img src="/images.jpeg" alt="logo" height="300px" width="400px"></th>
+            <th class="tha" style="background-color:wheat;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, optio. Impedit accusantium voluptates illum. Tempore numquam eaque debitis sint necessitatibus cupiditate soluta nesciunt voluptates reprehenderit? Impedit rem neque itaque qui? Maxime repellat saepe esse. Beatae amet nam repellat ipsa dolor exercitationem, ad alias tenetur, aspernatur repellendus est aliquam doloremque pariatur consequuntur, cumque porro mollitia vero ab ipsum ullam suscipit? Distinctio incidunt, aliquam enim officiis ipsam minus recusandae eius, porro voluptatem qui pariatur exercitationem assumenda hic vero vel, tempora quia voluptatibus corporis numquam sit dolores excepturi nemo necessitatibus repudiandae. Saepe laboriosam, minus atque iusto ut alias necessitatibus ab aliquam! Aut, mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum vitae modi, a debitis officiis adipisci consequuntur cum reiciendis necessitatibus quas, harum nemo quidem, sequi officia hic minus consectetur! Alias sint fugit inventore nihil nulla aliquid hic placeat? Sunt, facilis. Laboriosam labore, numquam asperiores officiis velit explicabo repellendus? Illum, perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus aliquam perferendis aspernatur nostrum? Earum culpa fuga nihil impedit adipisci cum amet rem inventore maiores non nemo delectus omnis assumenda natus eius, animi expedita sit, rerum pariatur ipsa aut eligendi fugiat laborum! Eligendi fuga error, dolorem, ea quam sed odit voluptate molestias itaque voluptates fugiat incidunt officiis doloribus ex voluptatibus neque?</th>
+          </thead>
+        </table>
+      <div class="first">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/lepdqiCF-W8?si=hUC2D3dbrY1mP6s8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen muted autoplay></iframe>
+      </div>
+      <footer>
+        <small><em>ALL RIGHTS RESERVED</em></small>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="HTML Training" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContactUs</title>
+</head>
+<style>
+    footer{
+      text-align:center;
+      border:2px solid black;
+    }
+    .navigationBar {
+      background-color:#7a642755;
+      overflow: hidden;
+    }
+
+    .navigationBar a {
+      float: left;
+      color: #140a0a;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 40px;
+      font-style:bold;
+    }
+
+    .navigationBar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .navigationBar a.active {
+      background-color: #04aa6d;
+      color: white;
+    }
+    body{
+      border:2px solid black;
+    }
+    div{
+      border:2px solid black;
+      margin:10px;
+      background-color:burlywood;
+    }
+    p{
+      background-color:darkseagreen;
+      font-size:20px;
+      color:black;
+      font-weight:bold;
+      border:2px solid black;
+      margin:10px;
+    }
+    th,td{
+      border:2px solid black;
+      padding:5px;
+      margin:10px;
+      padding-left:220px;
+      padding-right:220px;
+      background-color:khaki;
+      text-align:center;
+    }
+    table{
+      border-collapse:collapse;
+      margin:10px;
+    }
+    b{
+      margin-left:10px;
+      font-size:25px;
+      font-style:bold;
+    }
+    #check{
+      border:2px solid black;
+      margin:10px;
+
+    }
+</style>
+<body>
+  <nav class="navigationBar">
+    <a href="#" target="_self"><img src="/images.jpeg" alt="logo" width="100px" height="100px"></a>
+    <a href="/assign.html" target="_self" class="" onClick="activeSitename()" id="sitename"> SITENAME</a>
+    <a href="#" target="_self" class="active" onClick="activeContact()" id="contact">CONTACT US</a>
+  </nav>
+  <script type="text/javascript">
+    function activeSitename() {
+      document.getElementById("sitename").classList.add("active");
+      document.getElementById("contact").classList.remove("active");
+    }
+    function activeContact() {
+      document.getElementById("sitename").classList.remove("active");
+      document.getElementById("contact").classList.add("active");
+    }
+  </script>
+  <div margin bottom="0px">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse facere quaerat unde modi numquam alias praesentium incidunt tempora maiores ab fuga veniam nemo vel nisi voluptate ullam, nulla ipsam doloribus ea blanditiis minima corporis. Rem illo repudiandae libero officia? Perferendis, tempore perspiciatis amet voluptas quos ducimus eius voluptates cum! Vel sequi, libero tempore neque ad et, explicabo repellendus earum, natus maiores aspernatur perspiciatis! Aperiam sapiente eveniet rem delectus? Totam delectus asperiores quis accusantium veniam mollitia eum quasi hic aliquam magni? Nobis amet totam a nemo, ullam magnam debitis suscipit provident officia eligendi doloribus impedit voluptatum similique voluptatem! Vitae, ipsam quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum provident cupiditate ipsam consequatur similique amet quod sed voluptates suscipit. Est quisquam iure provident odio quae, blanditiis totam incidunt, sunt nulla fugit et? Doloribus molestias tempora ullam voluptate non exercitationem corrupti fugiat nam nemo ipsam aspernatur optio delectus temporibus eligendi vero, nisi consequuntur sed id. Eligendi in maiores obcaecati doloribus pariatur.
+    </p>
+    <b>Form</b>
+    <form action = "javascript:submitForm()" onSubmit = "return validate()">
+      <table>
+        <tbody>
+          <tr>
+            <td><label for="name"><h3>YOUR NAME</h3></label></td>
+            <td> <input type="text" name="name" id="name" placeholder="Eg:John Doe" required></td>
+          </tr>
+          <tr>
+            <td><label for="email"><h3>EMAIL</h3></label></td>
+            <td><input type:"email" name="email" id="email" placeholder="Eg:abc@gmail.com"></td>
+          </tr>
+          <tr>
+            <td><h3>FAVOURITE GENRE</h3></td>
+            <td><label for="genre">CHOOSE YOUR GENRE FROM THE LIST:</label>
+            <input list="genre" name="genre" id="genre">
+            <datalist id="genre">
+              <option value="Romance">
+              <option value="Tragedy">
+            </datalist>
+              <input type="submit"></td>
+          </tr>
+        </tbody>
+      </table>
+      <label for="check"><b style="border:1px solid black;">CHECKBOX</b></label>
+      <input type="checkbox" id="check" name="check">
+      <b style="text-align:center;">SUBSCRIBE TO OUR NEWS LETTER VIA EMAIL</b><br>
+      <input type="submit" name="submit" value="SUBMIT">
+    </form>
+    <script>
+      function validate(){
+        let validated=true;
+        ele=document.getElementById("name");
+        if(ele.value.length <= 10){
+          validated=false;
+          window.alert("Name must be greater than 10 characters");
+        }
+        return validated;
+      }
+      function submitForm(){
+        window.alert("Form Submitted");
+      }
+    </script>
+    <footer>
+      <small><em>ALL RIGHTS RESERVED</em></small>
+    </footer>
+  </div>
+</body>
